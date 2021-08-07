@@ -1,0 +1,434 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 
+body,
+html {
+    width: 100%;
+	height: 100%;
+    margin: 0 auto;
+    font-family: Gilroy;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    text-align: left;
+    background-color:#F6F6F6;
+}
+ */
+ body,
+ html{ 
+    background-color:#E5E5E5;
+}
+
+.page-header {
+    width: 1366px;
+    height: 834px;
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.header-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 635px;
+    padding-left: 110px;
+    padding-top: 54px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+    order: 1;
+}
+.header-socials {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 33px;
+    width: 245px;
+    padding-left: 1159px;
+}
+
+ .header-img__dog {
+    position: absolute; 
+    margin-top: 0;
+    margin-left: 538px; 
+    width: 718px;
+    height: 713px;
+    background: url('../img/bg/dog_bg.jpg') center center/cover no-repeat;
+
+}  
+.header-img__cat {
+   position: absolute;
+   display: block;
+   margin-left: 607px;
+   margin-top: 470px;
+}
+
+.slogan-text_1 img{
+    position:absolute;
+    display: block;  
+    margin-top: 374px; 
+    margin-left: 0px; 
+    opacity: 0.5;   
+}
+
+.slogan-text_2 {
+    position:absolute;
+    display: block;  
+    margin-top: 566px; 
+    margin-left: 0px; 
+    opacity: 0.5; 
+}
+.slogan-text_3  {
+    position:absolute;
+    display: block;  
+    margin-top: 671px; 
+    margin-left: 296px; 
+    opacity: 0.5; 
+}
+.header-promo{
+    position:absolute;
+    margin-top: 73px;
+}
+
+.header-promo__title{
+    width: 659px;
+    height: 77px;
+    margin-left: 110px;
+    margin-top: 91px;
+
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 87px;
+    display: flex;
+    align-items: center;
+    color: #242424; 
+}
+
+.header-promo__subtitle {
+    width: 659px;
+    height: 18px;
+    margin-left: 110px;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    color: #6B6B6B;
+}
+.header-promo__text{
+    width: 659px;
+    height: 44px;
+    margin-left: 110px;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;   
+    color: #474747;
+}
+.header-promo__slogan{
+    width: 428px;
+    height: 116px;
+    margin-left: 110px;
+    margin-top: 43px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #C78100;
+}
+.header-promo__btn {
+    position: absolute;
+    height: 32px;
+    width: 173px;
+    margin-left: 110px;
+    margin-top: 525px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
+.promo-btn__text {
+    height: 30px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #242424;
+    margin-left: 34px;
+    }
+
+
+
+
+#description {
+    height: 650px;
+    left: 0px;
+    background: #FFFFFF;
+}
+
+.section-description {
+    position: absolute;
+    width: 1366px;
+    margin: 0 auto;
+
+}
+.section-description__body {
+    position: absolute;
+    display: inline-block;
+    width: 566px;
+    font-family: Gilroy;
+    font-style: normal;
+    margin-top: 128px;
+    margin-left: 793px;
+    
+}
+.section-description__title {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 120%;
+    color: #C78100;
+    text-align: center;
+}
+.section-description p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 140%;
+    color: #242424;
+    margin-top: 20px;
+}
+
+.section-description__image-sqr {
+    position: absolute;
+   display: inline-block;
+   width: 341px; 
+   height: 521px;
+   margin-top: 54px;
+   margin-left: 0px;
+   background-color:#FFC41E;
+}
+.section-description__image-crc {
+    position: absolute;
+   display: inline-block;
+   width: 521px; 
+   height: 521px;
+   margin-top: 54px;
+   margin-left: 78px;
+   background-color:#FFC41E;
+   border-radius: 50%;
+}
+.section-description__image-crc_2 {
+    position: absolute;
+   display: inline-block;
+   width: 245px; 
+   height: 245px;
+   margin-top: 350px;
+   margin-left: 383px;
+   background-color:#FFC41E;
+   border-radius: 50%;
+}
+.section-description__image_1 {
+    position: absolute;
+   display: inline-block;
+   margin-top: 85px;
+   margin-left: 112px;
+}
+.section-description__image_2 {
+    position: absolute;
+   display: inline-block;
+   margin-top: 358px;
+   margin-left: 392px;
+}
+  
+
+/* help */
+
+#help {
+    width: 1366px;
+    position: relative; 
+    margin: 0 auto; 
+}
+.help-nav__title {
+    position: absolute;
+    margin: 80px 589px;  
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 24px;
+   
+}
+
+.help-nav__list {
+    position: absolute;
+    display: flex;
+    margin: 151px auto;
+    align-items: center;
+}
+
+.help-nav__item {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 166px;
+    padding: 8px;
+    margin-right: 120px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.help-nav__item:nth-child(5) {
+    margin-right: 0px;
+}
+
+.help-item__img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+    background: #F6F6F6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+    border-radius: 50%;
+}
+.help-item__text {
+    display: inline-block;
+    margin-top: 24px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #474747;
+}
+
+
+
+/* home-help */
+
+
+#home-help {
+    width: 1366px;
+    position: relative; 
+    margin: 0 auto; 
+    margin-top: 541px;
+    height: 398px;
+} 
+.home-help__body {
+    position: absolute;
+    display: flex;
+    margin: 142px 184px;
+    align-items: center;
+}
+.home-help__item {
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    padding: 8px;
+    margin-right: 177px;
+    box-sizing: border-box;
+}
+.home-help__item:nth-child(2) {
+    margin-right: 0px;
+}
+
+.home-item__title {
+    text-align: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 24px;
+    color: #242424;
+}
+
+.home-item__text {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 140%;
+    color: #242424;
+}
+
+
+
+
+
+
+
+
+#financial-help {
+    width: 1366px;
+    height: 716px;
+    left: 2px;
+    top: 3353px;
+    background: #FFFFFF;
+}
+
+
+
+/* галерея "Наши подопечные" */
+#wards-animals {
+    width: 1366px;
+    position: relative; 
+    margin: 0 auto; 
+}
+.gallery__title {
+    position: absolute;
+    margin: 72px 550px;  
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 24px; 
+    color: #242424; 
+}
+
+.gallery--slider {
+    position: absolute;
+    margin: 180px 110px; 
+}
+
+.gallery__list {
+    position: absolute;
+    display: flex;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    height: 555px;
+    width: 368px;
+    padding: 16px;
+    margin-right: 20px;
+    box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.gallery-item:nth-child(3) {
+    margin-right: 0px;
+}
+
+
+
+
+
+.news {
+    width: 1366px;
+    height: 563px;
+    left: 0px;
+    top: 6135px;
+
+    background: #FFFFFF;
+}
