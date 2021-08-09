@@ -24,7 +24,7 @@ html {
 }
 
 .page-header {
-    width: 1366px;
+    width: 1466px;
     height: 834px;
     position: relative; 
     margin: 0 auto; 
@@ -34,8 +34,8 @@ html {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 635px;
-    padding-left: 110px;
+    width: 735px;
+    padding-left: 210px;
     padding-top: 54px;
     font-weight: 600;
     font-size: 16px;
@@ -55,16 +55,16 @@ html {
  .header-img__dog {
     position: absolute; 
     margin-top: 0;
-    margin-left: 538px; 
+    margin-left: 638px; 
     width: 718px;
     height: 713px;
-    background: url('../img/bg/dog_bg.jpg') center center/cover no-repeat;
-
+    background: url('../../images/img/bg/dog_bg.jpg') center center/cover no-repeat;
 }  
+
 .header-img__cat {
    position: absolute;
    display: block;
-   margin-left: 607px;
+   margin-left: 707px;
    margin-top: 470px;
 }
 
@@ -115,51 +115,60 @@ html {
     margin-left: 110px;
     margin-top: 10px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 18px;
     color: #6B6B6B;
 }
 .header-promo__text{
-    width: 659px;
+    width: 699px;
     height: 44px;
     margin-left: 110px;
     margin-top: 12px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 140%;   
     color: #474747;
 }
 .header-promo__slogan{
-    width: 428px;
+    width: 498px;
     height: 116px;
     margin-left: 110px;
     margin-top: 43px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 29px;
     color: #C78100;
 }
-.header-promo__btn {
+.header-promo__btn-bg1 {
     position: absolute;
-    height: 32px;
-    width: 173px;
+    height: 42px;
+    width: 183px;
     margin-left: 110px;
     margin-top: 525px;
     background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
     box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
     border-radius: 58px;
 }
+.header-promo__btn-bg2{
+    position: relative;
+    width: 173px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 5px; 
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
 .promo-btn__text {
-    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
     font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    color: #242424;
-    margin-left: 34px;
+    line-height: 20px;  
+    color: #242424;  
     }
 
 
@@ -379,13 +388,13 @@ html {
 
 /* галерея "Наши подопечные" */
 #wards-animals {
-    width: 1366px;
+    width: 1466px;
     position: relative; 
     margin: 0 auto; 
 }
 .gallery__title {
     position: absolute;
-    margin: 72px 550px;  
+    margin: 80px 600px;  
     
     font-family: Gilroy;
     font-style: normal;
@@ -394,10 +403,21 @@ html {
     line-height: 24px; 
     color: #242424; 
 }
-
-.gallery--slider {
+.gallery__link{
     position: absolute;
-    margin: 180px 110px; 
+    margin-top: 10px; 
+    margin: 120px 630px;  
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #AD7F00;
+}
+
+.gallery-slider {
+    position: absolute;
+    margin: 180px 60px; 
 }
 
 .gallery__list {
@@ -411,7 +431,7 @@ html {
     height: 555px;
     width: 368px;
     padding: 16px;
-    margin-right: 20px;
+    margin-right: 100px;
     box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
     border-radius: 5px;
     box-sizing: border-box;
@@ -420,7 +440,135 @@ html {
     margin-right: 0px;
 }
 
+.gallery-item__name {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;  
+    color: #242424;  
+}
+.gallery-item__desc{
+    margin-top: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6B6B6B;
+}
+.gallery-item__text{
+    margin-top: 8px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #242424;
+}
+.gallery-item__link {
+    position: absolute;
+    margin-top: 502px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 40px;
+    text-decoration-line: underline;
+    color: #AD7F00;
+}
 
+.gallery-slider__left-btn{
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    margin-left: 146px;
+    margin-top: 600px;
+    background: #F6F6F6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+    border-radius: 50%;
+}
+.gallery-slider__right-btn{
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    margin-left: 1070px;
+    margin-top: 600px;
+    background: #F6F6F6;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
+    border-radius: 50%;
+}
+
+.gallery__btn-bg1{
+    position: absolute;
+    width: 209px;
+    height: 42px;
+    margin-left: 590px;
+    margin-top: 780px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+.gallery__btn-bg2{
+    position: relative;
+    width: 199px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 5px; 
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
+.gallery-btn__text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 7px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;  
+}
+
+.gallery__btn2-bg1{
+    position: absolute;
+    width: 296px;
+    height: 42px;
+    margin-left: 540px;
+    margin-top: 840px;
+    background: #F6F6F6;
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+}
+.gallery__btn2-bg2{
+    position: relative;
+    width: 286px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 5px; 
+    background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+}
+.gallery-btn2__text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 7px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;  
+}
 
 
 
@@ -432,3 +580,32 @@ html {
 
     background: #FFFFFF;
 }
+
+#footer-img {
+    position: relative; 
+    height: 1691px;
+    margin-top: 950px;
+}
+
+.footer-img__bg {
+    position: absolute;
+    margin-top: 0;  
+    width: 100%;
+    height: 100%;
+    background: url('../../images/img/bg/footer_bg.jpg') center center/cover no-repeat;
+} 
+.footer-img__text{
+    position: absolute;
+    margin: 503px 550px;  
+    width: 446px;
+    height: 154px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+
+
+
