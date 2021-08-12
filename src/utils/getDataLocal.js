@@ -1,22 +1,20 @@
-//const TASKS_LOCAL = 'http://localhost:3000/tasks';
-const TASKS_LOCAL = 'http://work.social-server.online/tasks';
+const PETS_LOCAL = 'http://localhost:3000/pets';
 
 
 const getResource = async (url) => {
   const res = await fetch(url);
-
   return res.json();
 }
 
-const getAllTasks = async () => {
-  const res = await getResource(TASKS_LOCAL);
+const getAllPets = async () => {
+  const res = await getResource(PETS_LOCAL);
   return res;
 }
 
-const getTask = async (id) => {
-  const res = await getResource(`${TASKS_LOCAL}/${id}`);
+const getPet = async (id) => {
+  const res = await getResource(`${PETS_LOCAL}/${id}`);
   return res;
 }
 
 
-export { getAllTasks, getTask };
+export {getAllPets, getPet};

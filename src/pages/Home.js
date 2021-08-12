@@ -1,13 +1,10 @@
 import "../styles/scss/main.css";
+import "../styles/css/hystmodal.css";
 import cat from "../images/img/bg/desc_img_2.png";
 import dog from "../images/img/bg/desc_img_1.png";
-import gallery_img1 from "../images/img/gallery/image_1.png";
-import gallery_img2 from "../images/img/gallery/image_2.png";
-import gallery_img3 from "../images/img/gallery/image_3.png";
 import regeneratorRuntime from "regenerator-runtime";
 
 const Home = async () => {
-
     const view = `
     <section id="description" >
     <div class="section-description">
@@ -88,44 +85,18 @@ const Home = async () => {
 <section id="wards-animals" class="gallery">
     <h2 class="gallery__title">Наши подопечные</h2>
     <a href="#" class="gallery__link">Посмотреть всех</a>
+    <div id="carousel" class="carousel">
     <div class="gallery gallery-slider">
-        <ul class="gallery__list">
-          <li class="gallery__item gallery-item">
-            <img class="gallery-item__img" src="${gallery_img3}" alt="Ваш друг">
-            <h4 class="gallery-item__name">Блэки</h4>
-            <br>
-            <hr>
-            <div class="gallery-item__desc">Мальчик, 7 месяцев</div>
-            <p class="gallery-item__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
-            <a href="#" class="gallery-item__link">Подробнее</a>
-          </li>
-          <li class="gallery__item gallery-item">
-            <img class="gallery-item__img" src="${gallery_img1}" alt="Ваш друг">
-            <h4 class="gallery-item__name">Моник</h4>
-            <br>
-            <hr>
-            <div class="gallery-item__desc">Мальчик, 7 месяцев</div>
-            <p class="gallery-item__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
-            <a href="#" class="gallery-item__link">Подробнее</a>
-          </li>
-          <li class="gallery__item gallery-item">
-            <img class="gallery-item__img" src="${gallery_img2}" alt="Ваш друг">
-            <h4 class="gallery-item__name">Саманта</h4>
-            <br>
-            <hr>
-            <div class="gallery-item__desc">Девочка, 1 год</div>
-            <p class="gallery-item__text">Очень ласковая мяукалка. Хочет домой.</p>
-            <a href="#" class="gallery-item__link">Подробнее</a>
-          </li>
-        </ul>
+        <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
         <button class="gallery-slider__left-btn"></button>
         <button class="gallery-slider__right-btn"></button>
       </div>
-    <button class="gallery__btn">
-        <div class="gallery__btn-bg1"><div class="gallery__btn-bg2"><span class="gallery-btn__text">Забрать домой</span></div></div>
+      </div>
+    <button class="gallery__btn1">
+        <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Забрать домой</span></div>
     </button>
     <button class="gallery__btn2">
-        <div class="gallery__btn2-bg1"><div class="gallery__btn2-bg2"><span class="gallery-btn2__text">Забрать на передержку</span></div></div>
+        <div class="gallery__btn2-bg"><span class="gallery-btn2__text">Забрать на передержку</span></div>
     </button>            
 </section>
 
@@ -214,6 +185,15 @@ const Home = async () => {
 </section>
 -->
 
+    <!--Current pet Modal-->
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>  
+                <div id="pet-modal-container"></div>
+            </div>
+        </div> 
+    </div>
     `;
 
     return view;
