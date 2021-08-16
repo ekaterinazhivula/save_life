@@ -1,4 +1,4 @@
-import "../styles/scss/main.css";
+import "../styles/css/main.css";
 
 const Footer = () => {
     const view = `

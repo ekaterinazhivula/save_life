@@ -333,7 +333,7 @@ html {
 .home-help__body {
     position: absolute;
     display: flex;
-    margin: 142px 184px;
+    margin: 142px 200px;
     align-items: center;
 }
 .home-help__item {
@@ -388,14 +388,14 @@ html {
 
 /* галерея "Наши подопечные" */
 #wards-animals {
-    width: 1466px;
+    width: 1366px;
     position: relative; 
     margin: 0 auto; 
 }
 .gallery__title {
     position: relative;
     margin-top: 72px; 
-    margin-left: 600px;  
+    margin-left: 570px;  
     font-family: Gilroy;
     font-style: normal;
     font-weight: 300;
@@ -407,7 +407,7 @@ html {
     position: relative;
     display: inline-block;
     margin-top: 24px; 
-    margin-left: 630px; 
+    margin-left: 580px; 
     
     font-family: Gilroy;
     font-style: normal;
@@ -423,7 +423,7 @@ html {
 
 .gallery-slider {
     margin-top: 20px;
-    margin-left: 110px; 
+    margin-left: 70px; 
     width: 1250px; 
     overflow: hidden; 
 }
@@ -521,7 +521,7 @@ html {
     position: absolute;
     width: 209px;
     height: 42px;
-    margin-left: 610px;
+    margin-left: 505px;
     margin-top: 0px;
     background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
     box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
@@ -560,7 +560,7 @@ html {
     position: absolute;
     width: 296px;
     height: 42px;
-    margin-left: 570px;
+    margin-left: 460px;
     margin-top: 68px;
     background: #F6F6F6;
     box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
@@ -623,8 +623,8 @@ html {
 
 #footer-img {
     position: relative; 
-    height: 741px;
-    margin-top:200px;
+    height: 841px;
+    margin-top:180px;
 }
 
 .footer-img__bg {

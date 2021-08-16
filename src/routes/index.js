@@ -3,6 +3,7 @@ import Header from "../template/Header";
 import Footer from "../template/Footer";
 import getHash from "../utils/getHash";
 import getResolveRoutes from "../utils/getResolveRoutes";
+import Gallery from "../pages/Gallery";
 /* import ErrorNotFound from "../pages/ErrorNotFound";
 import SignIn from "../pages/SignIn";
 import LogIn from "../pages/LogIn";
@@ -10,7 +11,8 @@ import Task from "../pages/Task"; */
 
 const routes = {
     "/": Home,
-  /*   "/signin": SignIn, // http://localhost:8080/#/signin
+    "/gallery": Gallery
+  /*"/signin": SignIn, // http://localhost:8080/#/signin
     "/login1": LogIn,
     "/:id": Task //http://localhost:8080/#/3 */
 }

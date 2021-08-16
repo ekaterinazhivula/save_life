@@ -1,4 +1,6 @@
 const PETS_LOCAL = 'http://localhost:3000/pets';
+const DOGS_LOCAL = 'http://localhost:3000/pets?kind=dog';
+const CATS_LOCAL = 'http://localhost:3000/pets?kind=cat';
 
 
 const getResource = async (url) => {
@@ -11,10 +13,20 @@ const getAllPets = async () => {
   return res;
 }
 
+const getAllDogs = async () => {
+  const res = await getResource(DOGS_LOCAL);
+  return res;
+}
+
+const getAllCats = async () => {
+  const res = await getResource(CATS_LOCAL);
+  return res;
+}
+
 const getPet = async (id) => {
   const res = await getResource(`${PETS_LOCAL}/${id}`);
   return res;
 }
 
 
-export {getAllPets, getPet};
+export {getAllPets, getAllDogs, getAllCats, getPet};

@@ -7,9 +7,9 @@
           i++;
       }
       */
-   /*   /*  /* конфигурация */
+  /* конфигурация */
      let width = 1; // ширина картинки
-     let count = 1; // видимое количество изображений */ */
+     //let count = 1; // видимое количество изображений */ 
 
      let list = carousel.querySelector('ul');
      let listElems = list.getElementsByTagName('li');

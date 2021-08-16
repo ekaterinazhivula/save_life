@@ -1,4 +1,4 @@
-import "../styles/scss/main.css";
+import "../styles/css/main.css";
 import "../styles/css/hystmodal.css";
 import cat from "../images/img/bg/desc_img_2.png";
 import dog from "../images/img/bg/desc_img_1.png";
@@ -84,20 +84,21 @@ const Home = async () => {
 
 <section id="wards-animals" class="gallery">
     <h2 class="gallery__title">Наши подопечные</h2>
-    <a href="#" class="gallery__link">Посмотреть всех</a>
+    <a href="http://localhost:8080/#/gallery" class="gallery__link">Посмотреть всех<span class="gallery__counter"></span></a>
     <div id="carousel" class="carousel">
     <div class="gallery gallery-slider">
         <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
         <button class="gallery-slider__left-btn"></button>
         <button class="gallery-slider__right-btn"></button>
-      </div>
-      </div>
-    <button class="gallery__btn1">
+        <button class="gallery__btn1">
         <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Забрать домой</span></div>
     </button>
     <button class="gallery__btn2">
         <div class="gallery__btn2-bg"><span class="gallery-btn2__text">Забрать на передержку</span></div>
-    </button>            
+    </button>  
+      </div>
+      </div>
+          
 </section>
 
 <!-- <section id="financial-help">
