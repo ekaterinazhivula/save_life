@@ -101,6 +101,13 @@
     text-decoration-line: underline;
     color: #AD7F00;
 }
+.gallery__edit-btn{
+    position: absolute;
+    margin-top: 500px; 
+    margin-left: 310px;
+    background: none;
+    border:none;
+}
 
 /* 
 buttons */
@@ -184,9 +191,7 @@ buttons */
 
 .gallery-page button:focus {
     outline: none;
-  }
-
-
+}
 
   /* select */
 #gallery-page__select {
@@ -235,55 +240,47 @@ background-position: left .7em top 50%, 0 0;
 padding: .6em .8em .5em 1.4em; 
 }
 
-
+.gallery-buttons-container {
+    display: table;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
 
 .gallery__add-btn {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 650px;
-    font-size: 24px;
-    font-weight: bold;
-    color: hsl(88, 70%, 30%);
-    text-shadow: rgba(255,255,255,.5) 0 -1px 0, rgba(0,0,0,.2) 0 .18em .15em;
-    text-decoration: none;
-    user-select: none;
-    padding: .5em .6em .4em .6em;
-    border-radius: 50%;
-    border-top: 1px solid rgba(255,255,255,.1);
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    outline: none;
-    background: #a2cf70 radial-gradient(rgba(255,255,255,0), rgba(255,255,255,.5));
-    box-shadow:
-     inset rgba(255,255,255,.6) 0 .3em .3em,
-     inset rgba(0,0,0,.2) 0 -.1em .3em,
-     rgb(128,161,103) 0 7px 1px,
-     rgba(0,0,0,.2) 0 .5em 5px;
-    transition: background .2s ease-in-out;
-  }
-  .gallery__add-btn:hover {
-    background-color: hsl(88, 70%, 75%);
+    width: 168px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    border-style: none;
+    padding: 5px;
+    border: 1px;
+}
+.gallery__add-btn:hover {
+    background: #FFCB38;
     cursor: pointer;
-  }
-  .gallery__add-btn:active {
-    top: .2em;
-    color: rgba(254,255,255,.9);
-    text-shadow: rgba(0,0,0,.2) 0 1px 2px;
-    box-shadow:
-     inset rgba(255,255,255,.6) 0 .3em .3em,
-     inset rgba(0,0,0,.2) 0 -.1em .3em,
-     rgba(0,0,0,.4) 0 .1em 1px,
-     rgba(0,0,0,.3) 0 .2em 6px;
-  }
-  .gallery__add-btn:after {
-    content:  "";
-    position:  absolute; 
-    width:   90%;
-    height:  60%;
-    top:   0;
-    left:   5%;    
-    border-radius:    50%;
-    background-image: linear-gradient(rgba(255,255,255,.55), rgba(255,255,255,.3)); 
-  }
-  .gallery__add-btn:active:after {
-    opacity: .6;
-  }
+}
+
+.gallery__add-btn-bg {
+    position: relative;
+    width: 158px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    border: 1px;
+}
+
+.gallery__add-btn-text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;
+}

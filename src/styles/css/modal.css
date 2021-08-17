@@ -1,0 +1,304 @@
+.hystmodal__window {
+    border-radius: 5px;
+}
+
+.hystmodal__close {
+    top: 40px;
+    right: 40px;
+    background-image: url(../../images/icons/close.svg);
+}
+
+.hystmodal__close:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+.pet-modal,
+.create-form,
+.update-form {
+    padding: 40px;    
+}
+
+.create-form__header,
+.update-form__header {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 24px;
+    color: #B3B3B3;
+    height: 40px;
+}
+
+.pet-modal__line,
+.create-form__line,
+.update-form__line {
+    width: 100%;
+    height: 2px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    background-color: #FFCB38;
+}
+
+.create-form__image,
+.update-form__image {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.create-form__input,
+.update-form__input {
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 2px;
+    height: 30px;
+    width: 100%;
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6B6B;
+    padding: 10px 16px;
+}
+
+.create-form__textarea,
+.update-form__textarea {
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 100%;
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6B6B;
+    padding: 10px 16px;
+}
+
+.create-form__save-button,
+.update-form__save-button {
+    width: 168px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    border-style: none;
+    padding: 5px;
+    border: 1px;
+}
+
+.create-form__save-button:hover,
+.update-form__save-button:hover {
+    background: #FFCB38;
+    cursor: pointer;
+}
+
+.create-form__save-button-bg,
+.update-form__save-button-bg {
+    position: relative;
+    width: 158px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    border: 1px;
+}
+
+.create-form__save-button-text,
+.update-form__save-button-text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;
+}
+
+.update-form__delete-button {
+    width: 143px;
+    height: 42px;
+    background: #F6F6F6;
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    border-style:none;
+    padding: 5px;
+    border: 1px;
+}
+
+.update-form__delete-button:hover {
+    background: rgb(255 0 0 / 63%);
+    cursor: pointer;
+}
+
+.update-form__delete-button-bg {
+    position: relative;
+    width: 133px;
+    height: 32px; 
+    background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+    border: 1px;
+}
+
+.update-form__delete-button-text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;  
+}
+
+.create-form button:focus,
+.update-form button:focus {
+    outline: none;
+}
+
+.create-form__input-container,
+.update-form__input-container {
+    margin-top: 10px;
+}
+
+.create-form__buttons-container,
+.update-form__buttons-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* currentPetModal */
+
+.pet-modal__header {
+    text-align: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 24px;
+    color: #B3B3B3;
+    height: 40px;
+}
+
+.pet-modal__desc {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6B6B6B;
+}
+
+.pet-modal__text {
+    max-width: 520px;
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+
+.pet-modal__image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.pet-modal__takeHome-button {
+    width: 168px;
+    height: 42px;
+    background: linear-gradient(180deg, #FFDE89 0%, #FFCB38 100%);
+    box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    border-style: none;
+    padding: 5px;
+    border: 1px;
+}
+
+.pet-modal__takeHome-button:hover {
+    background: #FFCB38;
+    cursor: pointer;
+}
+
+.pet-modal__takeHome-button-bg {
+    position: relative;
+    width: 158px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    border: 1px;
+}
+
+.pet-modal__takeHome-button-text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;
+}
+
+.pet-modal__overexposure-button {
+    width: 298px;
+    height: 42px;
+    background: #F6F6F6;
+    box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+    border-radius: 58px;
+    border-style:none;
+    padding: 5px;
+    border: 1px;
+}
+
+.pet-modal__overexposure-button:hover {
+    background: rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+}
+
+.pet-modal__overexposure-button-bg {
+    position: relative;
+    width: 288px;
+    height: 32px; 
+    background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+    border-radius: 58px;
+    border: 1px;
+}
+
+.pet-modal__overexposure-button-text {
+    display: inline-block;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 20px;  
+    color: #242424;  
+}
+
+.pet-modal button:focus {
+    outline: none;
+}
+
+.pet-modal__input-container {
+    margin-top: 10px;
+}
+
+.pet-modal__buttons-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}

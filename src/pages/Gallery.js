@@ -8,7 +8,7 @@ const Gallery = async () => {
     <section id="gallery-page" >
     <div class="gallery-page__header">
         <h2 class="gallery-page__title">Наши подопечные</h2>
-        <a href="#" class="gallery-page__link">Вернуться назад</a>
+        <a href="/#carousel" class="gallery-page__link">Вернуться назад</a>
         <select id="gallery-page__select" name="select" size="1">
             <option selected value="all">Коты и собаки</option>
             <option value="cat">Только коты</option>
@@ -18,8 +18,13 @@ const Gallery = async () => {
     <div class="gallery-page">
         <ul id="pets-gallery-page" class="gallery-page__list"></ul>   
     </div>
-    <button class="gallery__add-btn" data-hystmodal="#create-item">Добавить</button>
- 
+    <div class="gallery-buttons-container">
+        <button class="gallery__add-btn" data-newPet="#create-item">
+            <div class="gallery__add-btn-bg">
+                <span class="gallery__add-btn-text">Добавить</span>
+            </div>
+        </button>
+    </div>
 
     </section>
 
@@ -43,6 +48,15 @@ const Gallery = async () => {
         </div> 
     </div>
 
+    <!--Edit pet Modal-->
+    <div class="hystmodal" id="edit-item" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button> 
+                <div id="edit-item-container"></div> 
+            </div>
+        </div> 
+    </div>
 
 
     `;

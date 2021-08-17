@@ -84,21 +84,20 @@ const Home = async () => {
 
 <section id="wards-animals" class="gallery">
     <h2 class="gallery__title">Наши подопечные</h2>
-    <a href="http://localhost:8080/#/gallery" class="gallery__link">Посмотреть всех<span class="gallery__counter"></span></a>
+    <a href="/#/gallery" class="gallery__link">Посмотреть всех<span class="gallery__counter"></span></a>
     <div id="carousel" class="carousel">
-    <div class="gallery gallery-slider">
-        <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
-        <button class="gallery-slider__left-btn"></button>
-        <button class="gallery-slider__right-btn"></button>
-        <button class="gallery__btn1">
-        <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Забрать домой</span></div>
-    </button>
-    <button class="gallery__btn2">
-        <div class="gallery__btn2-bg"><span class="gallery-btn2__text">Забрать на передержку</span></div>
-    </button>  
-      </div>
-      </div>
-          
+        <div class="gallery gallery-slider">
+            <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
+            <button class="gallery-slider__left-btn"></button>
+            <button class="gallery-slider__right-btn"></button>
+            <button class="gallery__btn1">
+                <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Забрать домой</span></div>
+            </button>
+            <button class="gallery__btn2">
+                <div class="gallery__btn2-bg"><span class="gallery-btn2__text">Забрать на передержку</span></div>
+            </button>  
+        </div>
+    </div>          
 </section>
 
 <!-- <section id="financial-help">

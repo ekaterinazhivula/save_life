@@ -527,6 +527,8 @@ html {
     box-shadow: 7px 7px 16px #E3E3E3, -3px -4px 8px rgba(255, 255, 255, 0.9), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
     border-radius: 58px;
     border-style: none;
+    padding: 5px;
+    border: 1px;
 }
 .gallery__btn1:hover {
     background: #FFCB38;
@@ -537,11 +539,10 @@ html {
     position: relative;
     width: 199px;
     height: 32px;
-    margin-left: 6px;
-    margin-top: 2px; 
     background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
     box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
     border-radius: 58px;
+    border: 1px;
 }
 
 .gallery-btn1__text {
@@ -566,6 +567,8 @@ html {
     box-shadow: 7px 7px 16px #E3E3E3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
     border-radius: 58px;
     border-style:none;
+    padding: 5px;
+    border: 1px;
 }
 .gallery__btn2:hover {
     background: rgba(128, 128, 128, 0.1);
@@ -576,11 +579,10 @@ html {
     position: relative;
     width: 286px;
     height: 32px;
-    margin-left: 5px;
-    margin-top: 0px; 
     background: linear-gradient(180deg, #FBFBFB 0%, #F6F6F6 100%);
     box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
     border-radius: 58px;
+    border: 1px;
 }
 .gallery-btn2__text {
     display: inline-block;

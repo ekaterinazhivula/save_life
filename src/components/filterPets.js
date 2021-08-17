@@ -1,5 +1,5 @@
 import {getAllPets, getAllDogs, getAllCats} from "../utils/getDataLocal";
-import generatePetsGallery from "./petsGalleryPage";
+import {generatePetsGallery} from "./petsGalleryPage";
 
 const filterPets = async (event) => {
     const searchValue = event.target.value;

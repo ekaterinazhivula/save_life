@@ -7,7 +7,7 @@ const generateAllPets = async () => {
     const petsGallery = document.querySelector("#pets-gallery");
     petsGallery.innerHTML += `
           <li class="gallery__item gallery-item">
-            <img class="gallery-item__img" src="data:image/png;base64, ${pet.image}" alt="Ваш друг">
+            <img class="gallery-item__img" src="${pet.image}" alt="Ваш друг">
             <h4 class="gallery-item__name">${pet.nickName}</h4>
             <br>
             <hr>
