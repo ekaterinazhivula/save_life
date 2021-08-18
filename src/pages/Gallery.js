@@ -8,7 +8,7 @@ const Gallery = async () => {
     <section id="gallery-page" >
     <div class="gallery-page__header">
         <h2 class="gallery-page__title">Наши подопечные</h2>
-        <a href="/save_life/dist/index.html/#carousel" class="gallery-page__link">Вернуться назад</a>
+        <a href="/save_life/dist/index.html" class="gallery-page__link">Вернуться назад</a>
         <select id="gallery-page__select" name="select" size="1">
             <option selected value="all">Коты и собаки</option>
             <option value="cat">Только коты</option>
