@@ -3,6 +3,8 @@ import bg_img1 from "../images/img/bg/bg_text_1.png";
 import bg_img2 from "../images/img/bg/bg_text_2.png";
 import bg_img3 from "../images/img/bg/bg_text_3.png";
 import cat_bg from "../images/img/bg/cat_bg.png";
+import instagram from "../images/icons/instagram.png";
+import vk from "../images/icons/vk.png";
 
 const Header = () => {
     const view = `
@@ -12,14 +14,11 @@ const Header = () => {
     </div>
     <nav class="header-nav"> 
         <a class="header-nav__link nav__link--active" href="#help">Как помочь</a>
-        <a class="header-nav__link" href="#wards-animals">Подопечные животные</a>
-        <a class="header-nav__link" href="#info">О нас</a>
-        <a class="header-nav__link" href="#contacts">Контакты</a>
+        <a class="header-nav__link" href="#wards-animals">Подопечные животные</a> 
     </nav>
     <div class="header-socials">
-        <a href="#" class="socials__link socials__link--tw">Twitter</a>
-        <a href="#" class="socials__link socials__link--fb">Facebook</a>
-        <a href="#" class="socials__link socials__link--ok">Одноклассники</a>
+        <a href="#" class="socials__link socials__link--tw"> <img src="${instagram}"></a>
+        <a href="#" class="socials__link socials__link--fb"><img src="${vk}"></a>
     </div>
     <div class="header-promo">
     <h1 class="header-promo__title">СПАСИ ЖИЗНЬ</h1>
@@ -31,9 +30,11 @@ const Header = () => {
     <div class="slogan-text_1" ><img src="${bg_img1}" ></div>
     <div class="slogan-text_2" ><img src="${bg_img2}" ></div>
     <div class="slogan-text_3" ><img src="${bg_img3}" ></div>
-    <button class="header-promo__btn">
-        <div class="header-promo__btn-bg1"><div class="header-promo__btn-bg2"> <span class="promo-btn__text">Хочу помочь</span></div></div> 
-    </button>
+    <div class="header-promo__btn-div">
+        <button class="gallery__btn1">
+                <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Хочу помочь</span></div>
+        </button>
+    </div>
     `;
     return view;
 }

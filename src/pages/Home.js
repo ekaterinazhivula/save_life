@@ -2,6 +2,14 @@ import "../styles/css/main.css";
 import "../styles/css/hystmodal.css";
 import cat from "../images/img/bg/desc_img_2.png";
 import dog from "../images/img/bg/desc_img_1.png";
+import section_1 from "../images/icons/sections/section_1.png";
+import section_2 from "../images/icons/sections/section_2.png";
+import section_3 from "../images/icons/sections/section_3.png";
+import section_4 from "../images/icons/sections/section_4.png";
+import section_5 from "../images/icons/sections/section_5.png";
+import left_btn from "../images/icons/left-btn.png";
+import right_btn from "../images/icons/right-btn.png";
+
 import regeneratorRuntime from "regenerator-runtime";
 
 const Home = async () => {
@@ -33,31 +41,31 @@ const Home = async () => {
     <ul class ="help-nav__list">
         <li class ="help-nav__item help-item">
             <a href="#home-help" class="help-item__link">
-                <div class="help-item__img"></div>
+                <div class="help-item__img"><img src="${section_1}"></div>
                 <div class="help-item__text">Дать хвостику дом или взять на передержку</div> 
             </a>
             </li>
         <li class ="help-nav__item help-item">
             <a href="#home-help" class="help-item__link">
-                <div class="help-item__img"></div>
+                <div class="help-item__img"><img src="${section_2}"></div>
                 <div class="help-item__text">Перечислить деньги в фонд помощи</div> 
             </a>
             </li>
         <li class ="help-nav__item help-item">
             <a href="#home-help" class="help-item__link">
-                <div class="help-item__img"></div>
+                <div class="help-item__img"><img src="${section_3}"></div>
                 <div class="help-item__text">Привезти корм, лекарства или другие вещи</div> 
             </a>
             </li>
         <li class ="help-nav__item help-item">
             <a href="#home-help" class="help-item__link">
-                <div class="help-item__img"></div>
+                <div class="help-item__img"><img src="${section_4}"></div>
                 <div class="help-item__text">Доставить животным еду или отвезти в больницу</div> 
             </a>
             </li>
         <li class ="help-nav__item help-item">
             <a href="#home-help" class="help-item__link">
-                <div class="help-item__img"></div>
+                <div class="help-item__img"><img src="${section_5}"></div>
                 <div class="help-item__text">Выгуливать, кормить, мыть или лечить хвостиков</div>
             </a>
             </li>
@@ -65,7 +73,7 @@ const Home = async () => {
 </section>
 
 <section id="home-help" >
-    <hr>
+    <div class="create-form__line"></div>
     <div class="home-help__logo"></div>
     <div class="home-help__body">
         <div class="home-help__item home-item">
@@ -88,12 +96,12 @@ const Home = async () => {
     <div id="carousel" class="carousel">
         <div class="gallery gallery-slider">
             <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
-            <button class="gallery-slider__left-btn"></button>
-            <button class="gallery-slider__right-btn"></button>
-            <button class="gallery__btn1">
+            <button class="gallery-slider__left-btn"><img src="${left_btn}"></button>
+            <button class="gallery-slider__right-btn"><img src="${right_btn}"></button>
+            <button class="gallery__btn1" data-takeHome="#takeHomeModal">
                 <div class="gallery__btn1-bg"><span class="gallery-btn1__text">Забрать домой</span></div>
             </button>
-            <button class="gallery__btn2">
+            <button class="gallery__btn2" data-pickUpForOverexposure="#pickUpForOverexposureModal">
                 <div class="gallery__btn2-bg"><span class="gallery-btn2__text">Забрать на передержку</span></div>
             </button>  
         </div>
@@ -191,6 +199,26 @@ const Home = async () => {
             <div class="hystmodal__window" role="dialog" aria-modal="true">
                 <button data-hystclose class="hystmodal__close">Закрыть</button>  
                 <div id="pet-modal-container"></div>
+            </div>
+        </div> 
+    </div>
+
+    <!--Take home pet Modal-->
+    <div class="hystmodal" id="takeHomeModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>  
+                <div id="take-home-modal-container"></div>
+            </div>
+        </div> 
+    </div>
+
+    <!--Pick up pet for overexposure Modal-->
+    <div class="hystmodal" id="pickUpForOverexposureModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">Закрыть</button>  
+                <div id="pick-up-for-overexposure-modal-container"></div>
             </div>
         </div> 
     </div>

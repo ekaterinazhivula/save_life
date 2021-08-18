@@ -3,6 +3,8 @@ import router from "../routes";
 import generateAllPets from "../components/pets";
 import slider from "../components/slider";
 import generateCurrentPetModal from "../components/currentPet";
+import generateTakeHomeModal from "../components/takeHome";
+import generatePickUpForOverexposureModal from "../components/pickUpForOverexposure";
 import counterPets from "../components/counterPets";
 
 import {generatePetsGallery} from "../components/petsGalleryPage";
@@ -19,6 +21,8 @@ const getContent = async () => {
     await generateAllPets();
     slider();
     generateCurrentPetModal();
+    generateTakeHomeModal();
+    generatePickUpForOverexposureModal();
     counterPets();
   }
 

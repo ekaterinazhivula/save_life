@@ -5,7 +5,7 @@ import { createPet } from "../utils/createDataLocal";
 import { addPetToGallery } from "../components/petsGalleryPage";
 
 const createPetItem = async () => {
-    new HystModal({
+    const createModal = new HystModal({
         linkAttributeName: "data-newPet",
         catchFocus: true,
         closeOnEsc: true,
@@ -13,7 +13,17 @@ const createPetItem = async () => {
         beforeOpen: (modal) => {
             const modalContainer = modal.openedWindow.querySelector("#create-item-container");
 
-            modalContainer.innerHTML = `
+            modalContainer.innerHTML = createPetItemModal();
+
+            submitCreateForm(modalContainer, createModal);
+
+            setPetImage(modalContainer);
+        }
+    });
+};
+  
+const createPetItemModal = () => {
+   return `
                 <form id="createPetForm" class="create-form" >
                     <div class="create-form__header">Добавить питомца</div>
                     <div class="create-form__line"></div>
@@ -55,7 +65,7 @@ const createPetItem = async () => {
                         <input id="image" type="file" name="image"/>
                     </div>
                     <div class="create-form__buttons-container">
-                        <button class="create-form__save-button" id="savePet" type="submit" data-hystclose>
+                        <button class="create-form__save-button" id="savePet" type="submit" >
                             <div class="create-form__save-button-bg">
                                 <span class="create-form__save-button-text">Сохранить</span>
                             </div>
@@ -63,28 +73,31 @@ const createPetItem = async () => {
                     </div>
                 </form>
             `;
+};
 
-            modalContainer.querySelector("#createPetForm").addEventListener("submit", async (event) => {
-                let pet = await createPet(event);
-                addPetToGallery(pet);
-            });
-
-            modalContainer.querySelector('#image').addEventListener("change", async (event) => {
-                let promise = new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onloadend = async (e) => {
-                      resolve(e.target.result);
-                    };
-                    reader.onerror = (error) => {
-                      reject(error);
-                    };
-                    reader.readAsDataURL(event.currentTarget.files[0]);
-                  });
-          
-                  await promise.then(image => modalContainer.querySelector('#petImage').setAttribute('src', image));
-            });
-        }
+const submitCreateForm = (modalContainer, modal) => {
+    modalContainer.querySelector("#createPetForm").addEventListener("submit", async (event) => {
+        let pet = await createPet(event);
+        modal.close();
+        addPetToGallery(pet);
     });
 };
+
+const setPetImage = (modalContainer) => {
+    modalContainer.querySelector('#image').addEventListener("change", async (event) => {
+        let promise = new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onloadend = async (e) => {
+              resolve(e.target.result);
+            };
+            reader.onerror = (error) => {
+              reject(error);
+            };
+            reader.readAsDataURL(event.currentTarget.files[0]);
+          });
   
+          await promise.then(image => modalContainer.querySelector('#petImage').setAttribute('src', image));
+    });
+};
+
 export default createPetItem;

@@ -34,9 +34,9 @@ html {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 735px;
-    padding-left: 210px;
-    padding-top: 54px;
+    width: 535px;
+    padding-left: 130px;
+    padding-top: 62px;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -46,10 +46,17 @@ html {
 .header-socials {
     position: absolute;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 33px;
-    width: 245px;
-    padding-left: 1159px;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 15px;
+    padding-left: 1259px;
+   
+}
+.header-socials a {
+    padding-right: 10px; 
+}
+.header-socials img {
+    width: 50px; 
 }
 
  .header-img__dog {
@@ -139,38 +146,11 @@ html {
     line-height: 29px;
     color: #C78100;
 }
-.header-promo__btn-bg1 {
+.header-promo__btn-div {
     position: absolute;
-    height: 42px;
-    width: 183px;
-    margin-left: 110px;
-    margin-top: 525px;
-    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
-    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
-    border-radius: 58px;
+    margin-top: 530px;
+    margin-left: -350px;
 }
-.header-promo__btn-bg2{
-    position: relative;
-    width: 173px;
-    height: 32px;
-    margin-left: 5px;
-    margin-top: 5px; 
-    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
-    box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.25);
-    border-radius: 58px;
-}
-.promo-btn__text {
-    display: inline-block;
-    text-align: center;
-    margin-top: 5px;
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 20px;  
-    color: #242424;  
-    }
-
 
 
 
@@ -300,6 +280,7 @@ html {
     width: 150px;
     height: 150px;
     margin-top: 0px;
+    padding: 20px;
     background: #F6F6F6;
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
@@ -333,7 +314,7 @@ html {
 .home-help__body {
     position: absolute;
     display: flex;
-    margin: 142px 200px;
+    margin: 112px 200px;
     align-items: center;
 }
 .home-help__item {
@@ -602,7 +583,7 @@ html {
   
 .gallery-slider__right-btn:hover,
 .gallery-slider__left-btn:hover {
-    background: #ccc;
+    box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.6);
     cursor: pointer;
   }
 

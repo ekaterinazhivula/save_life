@@ -18,6 +18,8 @@
 
      if (list.style.marginLeft === "0px") {
          listElems[0].style.opacity = 0.5;
+         listElems[1].style.opacity = 1;
+         listElems[1].id = "markedPet";
          listElems[2].style.opacity = 0.5;
      }
 
@@ -39,6 +41,7 @@
             listElems[i].style.opacity = 0.5;
             listElems[i + 2].style.opacity = 0.5;
             listElems[i + 1].style.opacity = 1;
+            listElems[i + 1].id = "markedPet";
             break;
         }
      };
@@ -57,6 +60,7 @@
              listElems[i].style.opacity = 0.5;
              listElems[i + 2].style.opacity = 0.5;
              listElems[i + 1].style.opacity = 1;
+             listElems[i + 1].id = "markedPet";
              break;
          }
      };
