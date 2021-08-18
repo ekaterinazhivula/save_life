@@ -92,7 +92,7 @@ const Home = async () => {
 
 <section id="wards-animals" class="gallery">
     <h2 class="gallery__title">Наши подопечные</h2>
-    <a href="/#/gallery" class="gallery__link">Посмотреть всех<span class="gallery__counter"></span></a>
+    <a href="/save_life/dist/#/gallery" class="gallery__link">Посмотреть всех<span class="gallery__counter"></span></a>
     <div id="carousel" class="carousel">
         <div class="gallery gallery-slider">
             <ul id="pets-gallery" class="gallery__list" style="margin-left: 0px"></ul>
