@@ -39,6 +39,7 @@
          });
          for (let i = 0; i < listElems.length; i++) {
             listElems[i].style.opacity = 0.5;
+            listElems[i].removeAttribute("id");
             listElems[i + 2].style.opacity = 0.5;
             listElems[i + 1].style.opacity = 1;
             listElems[i + 1].id = "markedPet";
@@ -58,6 +59,7 @@
 
          for (let i = 0; i < listElems.length; i++) {
              listElems[i].style.opacity = 0.5;
+             listElems[i].removeAttribute("id");
              listElems[i + 2].style.opacity = 0.5;
              listElems[i + 1].style.opacity = 1;
              listElems[i + 1].id = "markedPet";

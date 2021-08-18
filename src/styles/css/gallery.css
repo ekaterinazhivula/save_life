@@ -57,6 +57,12 @@
 /*  .page-item:nth-child(4) {
     margin-right: 0px;
 }   */
+
+.gallery-item__img {
+    min-width: 335px;
+    max-height: 356px;
+}
+
 .gallery-page img:hover {
     cursor: pointer;
   }
