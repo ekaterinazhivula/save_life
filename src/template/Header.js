@@ -1,4 +1,5 @@
 import "../styles/css/main.css";
+import "../font/stylesheet.css";
 import bg_img1 from "../images/img/bg/bg_text_1.png";
 import bg_img2 from "../images/img/bg/bg_text_2.png";
 import bg_img3 from "../images/img/bg/bg_text_3.png";

@@ -40,7 +40,7 @@ const takeHomeModalContent = (pet) => {
                     <label for="phone">Номер телефона:</label>
                     <input id="phone" type="tel" placeholder="xx xxx-xx-xx" pattern="[0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2}" class="take-home-form__input" name="phone" required />
                 </div>
-                <div class="take-home-form__input-container">c
+                <div class="take-home-form__input-container">
                     <label for="remarks">Замечания:</label>
                     <textarea id="remarks" class="take-home-form__textarea" name="remarks" rows="5"></textarea>
                 </div>
